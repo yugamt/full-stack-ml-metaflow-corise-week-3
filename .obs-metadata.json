@@ -1,0 +1,133 @@
+{
+  "meta": {},
+  "data": {
+    "id": "full-stack-metaflow",
+    "title": "Week 3: The Compute Layer and Scaling to the Cloud!",
+    "defaultPath": "./notebooks/intro.ipynb",
+    "showPrimaryView": true,
+    "numbered": true,
+    "sections": [
+      {
+        "title": "Introduction",
+        "description": "",
+        "path": "./notebooks/intro.ipynb",
+        "doc": "./explainers/intro.html"
+      },
+      {
+        "title": "Random Forest flows on the cloud",
+        "description": "",
+        "path": "./flows/cloud/rf_flow_cloud.py",
+        "doc": "./explainers/rf-cloud-intro.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/cloud/rf_flow_cloud.py",
+          "label": "Run Flow",
+          "preFlags": "--environment=conda --with kubernetes"
+        }
+      },
+      {
+        "title": "Parallel training on the cloud",
+        "description": "",
+        "path": "./flows/cloud/tree_branch_flow_cloud.py",
+        "doc": "./explainers/parallel.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/cloud/tree_branch_flow_cloud.py",
+          "label": "Run Flow",
+          "preFlags": "--environment=conda --with kubernetes"
+        }
+      },
+      {
+        "title": "Sending specific steps to the cloud",
+        "description": "",
+        "path": "./flows/cloud/tree_branch_cloud_step.py",
+        "doc": "./explainers/cloud-branch.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/cloud/tree_branch_cloud_step.py",
+          "label": "Run Flow",
+          "preFlags": "--environment=conda"
+        }
+      },
+      {
+        "title": "Specficying dependencies at the flow level",
+        "description": "",
+        "path": "./flows/cloud/tree_branch_cloud_flow.py",
+        "doc": "./explainers/flow-deps.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/cloud/tree_branch_flow_cloud.py",
+          "label": "Run Flow",
+          "preFlags": "--environment=conda --with kubernetes"
+        }
+      },
+      {
+        "title": "Getting started with Argo",
+        "description": "",
+        "path": "./flows/cloud/tree_branch_cloud_flow_deploy.py",
+        "doc": "./explainers/getting_started_with_argo.html"
+      },
+      {
+        "title": "How to handle failures with Metaflow - I",
+        "description": "",
+        "path": "./flows/local/div1.py",
+        "doc": "./explainers/broken-flow.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/local/div1.py",
+          "label": "Run Flow"
+        }
+      },
+      {
+        "title": "How to handle failures with Metaflow - II",
+        "description": "",
+        "path": "./flows/local/div2.py",
+        "doc": "./explainers/fixed-flow.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/local/div2.py",
+          "label": "Run Flow"
+        }
+      },
+      {
+        "title": "Recovering from transient errors with @retry",
+        "description": "",
+        "path": "./flows/local/retry.py",
+        "doc": "./explainers/retry.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/local/retry.py",
+          "label": "Run Flow"
+        }
+      },
+      {
+        "title": "Killing zombies with @timeout",
+        "description": "",
+        "path": "./flows/local/timeout.py",
+        "doc": "./explainers/timeout.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/local/timeout.py",
+          "label": "Run Flow"
+        }
+      },
+      {
+        "title": "The decorator of last resort: @catch",
+        "description": "",
+        "path": "./flows/local/catch.py",
+        "doc": "./explainers/catch.html",
+        "action": {
+          "type": "run",
+          "value": "./flows/local/catch.py",
+          "label": "Run Flow"
+        }
+      },
+      {
+        "title": "Week 3 Project",
+        "description": "",
+        "path": "./project/template.ipynb"
+      }
+    ],
+    "links": []
+  }
+}
